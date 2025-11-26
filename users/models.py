@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.utils.html import strip_tags
 
 
-# Это менеджер модели — объект, который управляет созданием пользователей.
+# Это менеджер модели — объект, который управляет созданием пользователей. ПРОВЕРКА
 class CustomUserManager(BaseUserManager):
     #Используется когда обычный человек регистрируется на сайте через форму.
     def create_user(self, email, first_name, last_name, password=None, **extra_fields):
